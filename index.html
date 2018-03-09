@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Pixel Art Maker!</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+      <link rel="stylesheet" href="css/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
+   </head>
+   <body>
+      <div class="col-container">
+
+         <div class="menu-bar columns">
+            <h1>Pixel Art Maker</h1>
+            <h2>Choose Grid Size</h2>
+            <form id="sizePicker">
+               Grid Height:
+               <input type="number" id="input_height" name="height" min="1" max="30" value="1">
+               Grid Width:
+               <input type="number" id="input_width" name="width" min="1" max="34" value="1">
+               <input type="submit" value="Submit">
+            </form>
+            <h2 class="picker">Background Color</h2>
+            <input type="color" id="colorPickerBackground">
+            <h2 class="picker">Paint Color</h2>
+            <input type="color" id="colorPicker">
+            <p>Use left-click to <span>paint</span> and right-click to <span>erase</span></p>
+            <a href="#" class="clear-btn btn">Clear the grid</a>
+            <a href="#" class="remove-btn btn">Remove the grid</a>
+         </div>
+
+         <div class="design-canvas columns">
+            <table id="pixel_canvas"></table>
+         </div>
+         
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
